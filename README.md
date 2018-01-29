@@ -21,12 +21,6 @@ Amnesia僵尸网络允许攻击者利用 远程代码执行漏洞对未打补丁
 #### 二、技术分析
 本次发现的Amnesia僵尸网络运行在PowerPC架构上，首先攻击者通过暴力猜解或者其他手段感染DVR设备，使Amnesia恶意代码在 DVR上开始运行，当Amnesia运行后，它会连接远程C&C，并根据控制指令中指定的IP范围扫描网络中的其他DVR设备进行传播。
 
-Amnesia是首个采用虚拟机检测技术来躲避恶意软件分析沙箱的Linux嵌入式恶意代码。针对Windows或安卓的恶意软件常常会采用虚拟机 检测技术来躲避沙箱环境的分析，然而该技术在Linux嵌入式系统上却很少采用。当僵尸网络Amnesia发现自身运行于VirtualBox、 VMware或QEMU虚拟机中，它将删除系统中的所有文件来阻碍恶意软件分析沙箱的正常运行。 
-
-Linux系统中的/sys/class/dmi/id目录里存放了主机的相关硬件信息，包括产品信息、主板信息、Bios信息等，Amnesia就是通过读取该目录中的文件获取当前主机的硬件信息。当Amnesia运行时会读取/sys/class/dmi/id/product_name和/sys/class/dmi/id/sys_vendor文件，并匹配其中是否包含关键字“VirtualBox”、“VMware”和“QEMU”来判断当前目标系统是否为虚拟机。 
-
-当检测到当前主机为虚拟机时，Amnesia将开启自我删除，并删除Linux根目录、当前用户主目录、工作目录，这些删除操作相当于擦除整个Linux系统，会对整个系统造成损害
-
 ##### 2.1 反虚拟机
 
 Amnesia是首个采用虚拟机检测技术来躲避恶意软件分析沙箱的Linux嵌入式恶意代码。针对Windows或安卓的恶意软件常常会采用虚拟机 检测技术来躲避沙箱环境的分析，然而该技术在Linux嵌入式系统上却很少采用。当僵尸网络Amnesia发现自身运行于VirtualBox、 VMware或QEMU虚拟机中，它将删除系统中的所有文件来阻碍恶意软件分析沙箱的正常运行。
