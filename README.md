@@ -69,26 +69,26 @@ Amnesia恶意代码会请求/language/[language]/string.js页面,TVT DVR设备�
 
 | 序号 |  地区 | 感染数量 |
 | --- | --- | ---- |
-|1. |Taiwan |47170
-|2. |United States |44179
-|3. |Israel |23355
-|4. |Turkey |11780
-|5. |India |9796
+|1. |Taiwan |47170|
+|2. |United States |44179|
+|3. |Israel |23355|
+|4. |Turkey |11780|
+|5. |India |9796|
 |6. |Malaysia|9178|
-|7. |Mexico |7868
-|8. |Italy |7439
-|9. |Vietnam| 6736
-|10.|United Kingdom|4402
-|11. |Russia |3571
-|12. |Hungary|3529
-|13. |France |3165
-|14. |Bulgaria| 3040
-|15. |Romania|2783
-|16. |Colombia|2616
-|17. |Egypt| 2541
-|18. |Canada|2491
-|19. |Iran |1965
-|20. |Argentina |1748
+|7. |Mexico |7868|
+|8. |Italy |7439|
+|9. |Vietnam| 6736|
+|10.|United Kingdom|4402|
+|11. |Russia |3571|
+|12. |Hungary|3529|
+|13. |France |3165|
+|14. |Bulgaria| 3040|
+|15. |Romania|2783|
+|16. |Colombia|2616|
+|17. |Egypt| 2541|
+|18. |Canada|2491|
+|19. |Iran |1965|
+|20. |Argentina |1748|
 
 
 #### 四、技术分析及预测
